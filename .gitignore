@@ -2,7 +2,7 @@
 *.sketch
 *.fig
 *.xd
-README.md
+.README.md
 
 # Dependencies
 /node_modules
