@@ -2,7 +2,11 @@
 *.sketch
 *.fig
 *.xd
+<<<<<<< HEAD
 
+=======
+.README.md
+>>>>>>> 3acd288c2525055001eb3e4d91121b017aaa87b3
 
 # Dependencies
 /node_modules
