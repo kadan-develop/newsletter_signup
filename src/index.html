@@ -31,7 +31,7 @@
     <main class="flex flex-col sm:flex-row-reverse">
       <div
         id="hero-img"
-        class="bg-[url(./assets/images/illustration-sign-up-mobile.svg)] bg-no-repeat w-[380px] h-[300px] md:bg-[url(./assets/images/illustration-sign-up-desktop.svg)] md:bg-auto md:bg-center md:bg-no-repeat md:h-[1000px]"
+        class="bg-[url(./assets/images/illustration-sign-up-mobile.svg)] bg-no-repeat w-full h-[300px] md:bg-[url(./assets/images/illustration-sign-up-desktop.svg)] md:bg-auto md:bg-center md:bg-no-repeat md:h-[1000px]"
       ></div>
 
       <section class="p-6">
@@ -43,20 +43,35 @@
             Join 60,000+ product managers receiving monthly updates on:
           </p>
 
-          <div class="list flex-col align-center">
-            <img
-              class="inline-block"
-              src="./assets/images/icon-list.svg"
-              alt="list-icon"
-            />
-            <p class="text-[hsl(235, 18%, 26%)] text-base font-normal">
-              Product discovery and building what matters Measuring to ensure
-              updates are building what matters
-            </p>
-            <img src="./assets/images/icon-list.svg" alt="list-icon" />
-            <p>Measuring to ensure updates are a succes</p>
-            <img src="./assets/images/icon-list.svg" alt="list-icon" />
-            <p>And much more!</p>
+          <div class="list">
+            <div class="flex mt-4">
+              <img
+                class="pr-3"
+                src="./assets/images/icon-list.svg"
+                alt="list-icon"
+              />
+              <p class="text-[hsl(235, 18%, 26%)] text-base font-normal">
+                Product discovery and building what matters
+              </p>
+            </div>
+
+            <div class="flex mt-2">
+              <img
+                class="pr-3"
+                src="./assets/images/icon-list.svg"
+                alt="list-icon"
+              />
+              <p>Measuring to ensure updates are a succes</p>
+            </div>
+
+            <div class="flex mt-2">
+              <img
+                class="pr-3"
+                src="./assets/images/icon-list.svg"
+                alt="list-icon"
+              />
+              <p>And much more!</p>
+            </div>
           </div>
         </div>
 
