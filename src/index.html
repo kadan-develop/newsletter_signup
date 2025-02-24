@@ -18,15 +18,8 @@
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
-
-    <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
-
-    <style></style>
   </head>
-  <body>
+  <body class="bg-[hsl(235, 18%, 26%)]">
     <!-- Sign-up form start -->
     <main class="flex flex-col sm:flex-row-reverse">
       <div
@@ -36,21 +29,21 @@
 
       <section class="p-6">
         <div class="text-content">
-          <h1 class="font-bold text-[40px] mb-6 text-[hsl(234, 29%, 20%)]">
+          <h1 class="font-bold text-[40px] mb-3 text-[hsl(234, 29%, 20%)]">
             Stay updated!
           </h1>
           <p class="text-[hsl(235, 18%, 26%)] text-base font-normal">
             Join 60,000+ product managers receiving monthly updates on:
           </p>
 
-          <div class="list">
+          <div class="list text-md">
             <div class="flex mt-4">
               <img
                 class="pr-3"
                 src="./assets/images/icon-list.svg"
                 alt="list-icon"
               />
-              <p class="text-[hsl(235, 18%, 26%)] text-base font-normal">
+              <p class="text-[hsl(235, 18%, 26%)] font-normal">
                 Product discovery and building what matters
               </p>
             </div>
@@ -75,9 +68,14 @@
           </div>
         </div>
 
-        <div class="sign-up-content">
-          <label for="email">Email address</label>
+        <div class="sign-up-content mt-8">
+          <label
+            class="text-[11px] font-bold text-[hsl(234, 29%, 20%)]"
+            for="email"
+            >Email address</label
+          >
           <input
+            class="block border-[1px] border-[hsl(0, 0%,58%)] rounded-lg w-[330px] h-[50px] mt-2 p-5"
             type="text"
             id="email"
             name="email"
@@ -85,25 +83,38 @@
           />
         </div>
 
-        <button>Subscribe to monthly newsletter</button>
+        <button
+          class="bg-[hsl(234,29%,20%)] text-[#fff] font-bold text-sm rounded-lg w-[330px] h-[50px] mt-6"
+        >
+          Subscribe to monthly newsletter
+        </button>
       </section>
     </main>
 
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-
+    <!-- 
     Thanks for subscribing! A confirmation email has been sent to
     ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
+    your subscription. Dismiss message -->
 
     <!-- Success message end -->
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    <footer class="attribution text-[11px] text-center mt-5">
+      <p>Challenge by</p>
+      <a
+        class="text-[hsl(228, 45%, 44%)]"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >
+      Coded by
+      <a
+        class="text-[hsl(228, 45%, 44%)]"
+        href="frontendmentor.io/kadan-develop"
+        >kadan-develop</a
+      >.
+    </footer>
   </body>
 </html>
