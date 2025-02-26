@@ -14,30 +14,37 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
   </head>
-  <body class="bg-[hsl(235, 18%, 26%)]">
+  <body
+    class="md:bg-[#242742] lg:bg-[#242742] lg:flex lg:flex-col lg:justify-center lg:items-center lg:h-screen"
+  >
     <!-- Sign-up form start -->
-    <main class="flex flex-col sm:flex-row-reverse">
+    <main
+      class="flex flex-col lg:flex-row-reverse lg:justify-between lg:w-[904px] lg:bg-[#fff] lg:h-[641px] lg:rounded-3xl lg:shadow-lg"
+    >
       <div
         id="hero-img"
-        class="bg-[url(./assets/images/illustration-sign-up-mobile.svg)] bg-no-repeat w-full h-[300px] md:bg-[url(./assets/images/illustration-sign-up-desktop.svg)] md:bg-auto md:bg-center md:bg-no-repeat md:h-[1000px]"
+        class="bg-[url(./assets/images/illustration-sign-up-mobile.svg)] bg-no-repeat w-[200px] h-[300px] lg:bg-[url(./assets/images/desktop-ilustration.svg)] lg:w-[400px] lg:h-[596px] lg:mt-[24px] lg:mr-[32px]"
       ></div>
 
-      <section class="p-6">
-        <div class="text-content">
-          <h1 class="font-bold text-[40px] mb-3 text-[hsl(234, 29%, 20%)]">
-            Stay updated!
-          </h1>
-          <p class="text-[hsl(235, 18%, 26%)] text-base font-normal">
-            Join 60,000+ product managers receiving monthly updates on:
-          </p>
+      <section class="p-6 lg:p-0">
+        <div class="text-content lg:ml-[32px] lg:mt-[95.5px]">
+          <div class="lg:w-[376px]">
+            <h1
+              class="font-bold text-[40px] mb-[24px] text-[#242742] lg:text-[56px] lg:mb-[32px]"
+            >
+              Stay updated!
+            </h1>
+            <p class="text-[hsl(235, 18%, 26%)] text-base font-normal">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+          </div>
 
-          <div class="list text-md">
-            <div class="flex mt-4">
+          <div class="list">
+            <div class="flex mt-4 lg:mt-[32px]">
               <img
                 class="pr-3"
                 src="./assets/images/icon-list.svg"
@@ -68,26 +75,25 @@
           </div>
         </div>
 
-        <div class="sign-up-content mt-8">
+        <div class="sign-up-content mt-8 lg:mt-[32px] lg:ml-[32px]">
           <label
-            class="text-[11px] font-bold text-[hsl(234, 29%, 20%)]"
+            class="text-[12px] font-bold text-[hsl(234, 29%, 20%)]"
             for="email"
             >Email address</label
           >
           <input
-            class="block border-[1px] border-[hsl(0, 0%,58%)] rounded-lg w-[330px] h-[50px] mt-2 p-5"
+            class="block border-[1px] border-[#949494] rounded-lg w-[376px] h-[56px] mt-2 p-5"
             type="text"
             id="email"
             name="email"
             placeholder="email@company.com"
           />
+          <button
+            class="bg-[#242742] text-[#fff] font-bold text-base rounded-lg w-[376px] h-[56px] mt-6"
+          >
+            Subscribe to monthly newsletter
+          </button>
         </div>
-
-        <button
-          class="bg-[hsl(234,29%,20%)] text-[#fff] font-bold text-sm rounded-lg w-[330px] h-[50px] mt-6"
-        >
-          Subscribe to monthly newsletter
-        </button>
       </section>
     </main>
 
@@ -101,17 +107,17 @@
 
     <!-- Success message end -->
 
-    <footer class="attribution text-[11px] text-center mt-5">
+    <footer class="attribution text-sm text-center mt-12 lg:text-[#fff]">
       <p>Challenge by</p>
       <a
-        class="text-[hsl(228, 45%, 44%)]"
+        class="text-[hsl(228, 45%, 44%)] lg:text-[#FF527B]"
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
         >Frontend Mentor</a
       >
       Coded by
       <a
-        class="text-[hsl(228, 45%, 44%)]"
+        class="text-[hsl(228, 45%, 44%)] lg:text-[#FF527B]"
         href="frontendmentor.io/kadan-develop"
         >kadan-develop</a
       >.
