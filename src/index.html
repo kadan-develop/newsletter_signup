@@ -19,22 +19,22 @@
     </title>
   </head>
   <body
-    class="md:bg-[#242742] lg:bg-[#242742] lg:flex lg:flex-col lg:justify-center lg:items-center lg:h-screen"
+    class="sm:bg-[#242742] sm:flex sm:flex-col sm:justify-center sm:items-center lg:bg-[#242742] lg:flex lg:flex-col lg:justify-center lg:items-center lg:h-screen"
   >
     <!-- Sign-up form start -->
     <main
-      class="flex flex-col lg:flex-row-reverse lg:justify-between lg:w-[904px] lg:bg-[#fff] lg:h-[641px] lg:rounded-3xl lg:shadow-lg"
+      class="flex flex-col sm:rounded-3xl sm:mt-[76px] sm:justify-center bg-[#fff] sm:w-[608px] sm:h-[878px] lg:flex-row-reverse lg:justify-between lg:w-[904px] lg:bg-[#fff] lg:h-[641px] lg:rounded-3xl lg:shadow-lg"
     >
       <div
         id="hero-img"
-        class="bg-[url(./assets/images/illustration-sign-up-mobile.svg)] bg-no-repeat w-[200px] h-[300px] lg:bg-[url(./assets/images/desktop-ilustration.svg)] lg:w-[400px] lg:h-[596px] lg:mt-[24px] lg:mr-[32px]"
+        class="bg-[url(./assets/images/mobile-ilustration.svg)] bg-no-repeat w-full h-[284px] sm:bg-[url(./assets/images/tablet-ilustration.svg)] sm:w-[528px] sm:h-[358.29px] sm:ml-[40px] sm:mt-[42px] lg:bg-[url(./assets/images/desktop-ilustration.svg)] lg:w-[400px] lg:h-[596px] lg:mt-[24px] lg:mr-[32px]"
       ></div>
 
-      <section class="p-6 lg:p-0">
+      <section class="p-6 sm:ml-[20px] lg:p-0">
         <div class="text-content lg:ml-[32px] lg:mt-[95.5px]">
           <div class="lg:w-[376px]">
             <h1
-              class="font-bold text-[40px] mb-[24px] text-[#242742] lg:text-[56px] lg:mb-[32px]"
+              class="font-bold text-[40px] mb-[24px] text-[#242742] sm:text-[56px] lg:text-[56px] lg:mb-[32px]"
             >
               Stay updated!
             </h1>
@@ -75,21 +75,23 @@
           </div>
         </div>
 
-        <div class="sign-up-content mt-8 lg:mt-[32px] lg:ml-[32px]">
+        <div
+          class="sign-up-content mt-8 sm:mt-[24px] lg:mt-[32px] lg:ml-[32px]"
+        >
           <label
             class="text-[12px] font-bold text-[hsl(234, 29%, 20%)]"
             for="email"
             >Email address</label
           >
           <input
-            class="block border-[1px] border-[#949494] rounded-lg w-[376px] h-[56px] mt-2 p-5"
+            class="block border-[1px] border-[#949494] rounded-lg w-[327px] h-[56px] mt-2 p-5 sm:w-[528px] lg:w-[376px]"
             type="text"
             id="email"
             name="email"
             placeholder="email@company.com"
           />
           <button
-            class="bg-[#242742] text-[#fff] font-bold text-base rounded-lg w-[376px] h-[56px] mt-6"
+            class="bg-[#242742] text-[#fff] font-bold text-base rounded-lg w-[327px] h-[56px] mt-6 sm:w-[528px] sm:mt-[16px] lg:w-[376px]"
           >
             Subscribe to monthly newsletter
           </button>
