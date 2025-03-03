@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@media screen and (max-width: 630px) {
+  #hero-img {
+    background-image: url("./assets/images/mobile-ilustration.svg");
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+  }
+}

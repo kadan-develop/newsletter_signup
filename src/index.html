@@ -19,7 +19,7 @@
     </title>
   </head>
   <body
-    class="sm:bg-[#242742] sm:flex sm:flex-col sm:justify-center sm:items-center lg:bg-[#242742] lg:flex lg:flex-col lg:justify-center lg:items-center lg:h-screen"
+    class="sm:bg-[#242742] sm:flex sm:flex-col sm:justify-center sm:items-center lg:bg-[#242742] lg:flex lg:flex-col lg:justify-center lg:items-center"
   >
     <!-- Sign-up form start -->
     <main
@@ -27,7 +27,7 @@
     >
       <div
         id="hero-img"
-        class="bg-[url(./assets/images/mobile-ilustration.svg)] bg-no-repeat w-full h-[284px] sm:bg-[url(./assets/images/tablet-ilustration.svg)] sm:w-[528px] sm:h-[358.29px] sm:ml-[40px] sm:mt-[42px] lg:bg-[url(./assets/images/desktop-ilustration.svg)] lg:w-[400px] lg:h-[596px] lg:mt-[24px] lg:mr-[32px]"
+        class="w-full h-[284px] sm:bg-[url(./assets/images/tablet-ilustration.svg)] sm:w-[528px] sm:h-[358.29px] sm:ml-[40px] sm:mt-[42px] lg:bg-[url(./assets/images/desktop-ilustration.svg)] lg:bg-no-repeat lg:w-[400px] lg:h-[596px] lg:mt-[24px] lg:mr-[32px]"
       ></div>
 
       <section class="p-6 sm:ml-[20px] lg:p-0">
@@ -76,22 +76,31 @@
         </div>
 
         <div
-          class="sign-up-content mt-8 sm:mt-[24px] lg:mt-[32px] lg:ml-[32px]"
+          class="relative sign-up-content mt-8 sm:mt-[24px] lg:mt-[32px] lg:ml-[32px]"
         >
           <label
             class="text-[12px] font-bold text-[hsl(234, 29%, 20%)]"
             for="email"
             >Email address</label
           >
+
+          <p
+            id="invalid-email"
+            class="absolute right-0 top-[2px] text-[12px] text-[#FF6155] font-bold hidden"
+          >
+            Valid email required
+          </p>
           <input
-            class="block border-[1px] border-[#949494] rounded-lg w-[327px] h-[56px] mt-2 p-5 sm:w-[528px] lg:w-[376px]"
+            class="block border-[1px] border-[#949494] rounded-lg w-full h-[56px] mt-2 p-5 focus:outline focus:outline-[#242742] sm:w-[528px] lg:w-[376px]"
             type="text"
             id="email"
             name="email"
             placeholder="email@company.com"
+            onchange=""
+            required
           />
           <button
-            class="bg-[#242742] text-[#fff] font-bold text-base rounded-lg w-[327px] h-[56px] mt-6 sm:w-[528px] sm:mt-[16px] lg:w-[376px]"
+            class="bg-[#242742] text-[#fff] bg-gradient-to-r hover:from-[#ff6a3a] hover:to-[#ff527b] font-bold text-base rounded-lg w-full h-[56px] mt-6 sm:w-[528px] sm:mt-[16px] lg:w-[376px]"
           >
             Subscribe to monthly newsletter
           </button>
@@ -124,5 +133,7 @@
         >kadan-develop</a
       >.
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
