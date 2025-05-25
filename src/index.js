@@ -10,14 +10,33 @@ const validateEmail = (email) => {
   );
 };
 
-button.addEventListener("click", () => {
+button.addEventListener("click", (e) => {
+  e.preventDefault()
+  
   if (validateEmail(input.value)) {
-    console.log("good email");
+  
+    invalidEmailText.classList.add("hidden");
+    
+    input.value = ''
+
+
   } else {
     input.style.border = "1px solid #FF6155";
     input.style.color = "#ff6155";
     input.style.background = "#FFE7E6";
     input.style.outline = "none";
+
     invalidEmailText.classList.remove("hidden");
   }
 });
+
+
+button.addEventListener("keypress", (event) => {
+    
+  if (event.key === "Enter") {
+    event.preventDefault();
+
+    button.click();
+   
+  }
+})
