@@ -12,12 +12,16 @@ const validateEmail = (email) => {
 
 button.addEventListener("click", (e) => {
   e.preventDefault()
+
   
   if (validateEmail(input.value)) {
   
+    input.style.border = "1px solid #949494";
+    input.style.color =  "#242742"
+    input.style.background = "#fff";
     invalidEmailText.classList.add("hidden");
     
-    input.value = ''
+    input.value = '';
 
 
   } else {

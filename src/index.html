@@ -23,7 +23,7 @@
   >
     <!-- Sign-up form start -->
     <main
-      class="flex flex-col sm:rounded-3xl sm:mt-[76px] sm:justify-center bg-[#fff] sm:w-[608px] sm:h-[878px] lg:flex-row-reverse lg:justify-between lg:w-[904px] lg:bg-[#fff] lg:h-[641px] lg:rounded-3xl lg:shadow-lg"
+      class="hidden flex flex-col sm:rounded-3xl sm:mt-[76px] sm:justify-center bg-[#fff] sm:w-[608px] sm:h-[878px] lg:flex-row-reverse lg:justify-between lg:w-[904px] lg:bg-[#fff] lg:h-[641px] lg:rounded-3xl lg:shadow-lg"
     >
       <div
         id="hero-img"
@@ -92,7 +92,7 @@
             Valid email required
           </p>
           <input
-            class="block border-[1px] border-[#949494] rounded-lg w-full h-[56px] mt-2 p-5 focus:outline focus:outline-[#242742] sm:w-[528px] lg:w-[376px] "
+            class="block border-[1px] border-[#949494] rounded-lg w-full h-[56px] mt-2 p-5 focus:outline focus:outline-[#242742] sm:w-[528px] lg:w-[376px]      "
             type="text"
             id="email"
             name="email"
@@ -100,7 +100,7 @@
             required
           />
           <button
-           type="submit" class="bg-[#242742] text-[#fff] bg-gradient-to-r hover:from-[#ff6a3a] hover:to-[#ff527b] font-bold text-base rounded-lg w-full h-[56px] mt-6 sm:w-[528px] sm:mt-[16px] lg:w-[376px] cursor-pointer"
+           type="submit" class="bg-[#242742] text-[#fff] bg-gradient-to-r hover:from-[#ff6a3a] hover:to-[#ff527b] font-bold text-base rounded-lg w-full h-[56px] mt-6 sm:w-[528px] sm:mt-[16px] lg:w-[376px] cursor-pointer "
           >
             Subscribe to monthly newsletter
           </button>
@@ -108,6 +108,34 @@
         </div>
       </section>
     </main>
+
+    <div class="success flex justify-center items-center min-h-screen">
+      <div
+        class="flex flex-col items-start bg-[#fff] lg:rounded-4xl  mt-[24px] pl-14 pr-14 sm:mt-[0px] lg:w-[435px] lg:h-[450px]"
+
+      >
+        <img 
+          class="pt-10 w-14"
+          src="./assets/images/icon-success.svg"
+          alt="success-icon"
+        />
+        <h2 class="text-5xl font-bold text-[#242742] pt-8 mb-2">
+          Thanks for subscribing!
+        </h2>
+        <p class="text-[14px] text-[#242742] pt-4 ">
+          A confirmation email has been sent to 
+           
+          <span id="email-address" class="font-bold"> ash@loremcompany.com.</span>
+          Please open it and click the button inside to confirm
+    your subscription. </p>
+        <button
+          id="dismiss-btn"
+          class="bg-[#242742] text-[#fff] bg-gradient-to-r hover:from-[#ff6a3a] hover:to-[#ff527b] font-bold text-[14px] rounded-lg lg:w-full  w-[200px] h-[48px]  mt-8 cursor-pointer"
+        >
+          Dismiss message
+        </button>
+      </div>
+    </div>
 
     <!-- Sign-up form end -->
 
