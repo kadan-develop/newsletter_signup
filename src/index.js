@@ -2,7 +2,12 @@
 
 const input = document.querySelector("input");
 const button = document.querySelector("button");
+const dismissButton = document.getElementById("dismiss-btn");
 const invalidEmailText = document.getElementById("invalid-email");
+const succsessSection = document.getElementById("success-section");
+const mainSection = document.querySelector("main");
+const emailAddress = document.getElementById("email-address");
+
 
 const validateEmail = (email) => {
   return email.match(
@@ -16,12 +21,18 @@ button.addEventListener("click", (e) => {
   
   if (validateEmail(input.value)) {
   
+    emailAddress.textContent = input.value;
+    
     input.style.border = "1px solid #949494";
     input.style.color =  "#242742"
     input.style.background = "#fff";
     invalidEmailText.classList.add("hidden");
     
     input.value = '';
+
+    
+  mainSection.classList.add("hidden");
+  succsessSection.classList.remove("hidden");
 
 
   } else {
@@ -32,6 +43,7 @@ button.addEventListener("click", (e) => {
 
     invalidEmailText.classList.remove("hidden");
   }
+
 });
 
 
@@ -44,3 +56,11 @@ button.addEventListener("keypress", (event) => {
    
   }
 })
+
+dismissButton.addEventListener("click", () => {
+
+  mainSection.classList.remove("hidden");
+  succsessSection.classList.add("hidden");
+
+  
+});

@@ -116,13 +116,16 @@
   
 
 
-    <div class="success flex flex-col justify-around items-center lg:justify-center min-h-screen">
+    <div id="success-section" class="success flex flex-col lg:justify-around items-center  min-h-screen">
       <div
         class="flex flex-col bg-[#fff] lg:rounded-4xl  mt-[24px] pl-6 pr-10 lg:pl-14 lg:pr-14 sm:mt-[0px] lg:w-[435px] lg:h-[450px]"
 
       >
+
+      <div>
+
         <img 
-          class="pt-10 w-14"
+        class="pt-10 w-14"
           src="./assets/images/icon-success.svg"
           alt="success-icon"
         />
@@ -131,24 +134,28 @@
         </h2>
         <p class="text-[14px] text-[#242742] pt-4 ">
           A confirmation email has been sent to 
-           
-          <span id="email-address" class="font-bold"> ash@loremcompany.com.</span>
+          
+          <span id="email-address" class="font-bold"> </span>
           Please open it and click the button inside to confirm
-    your subscription. </p>
-  </div>
-  <button
-    id="dismiss-btn"
-    class="bg-[#242742]  text-[#fff] bg-gradient-to-r hover:from-[#ff6a3a] hover:to-[#ff527b]  font-bold text-[14px] rounded-lg w-[350px] h-[48px] cursor-pointer"
-  >
-    Dismiss message
-  </button>
-    </div>
+          your subscription. </p>
+      </div>
+
+        <div>
+            <button
+            id="dismiss-btn"
+            class="bg-[#242742] mt-8 text-[#fff] bg-gradient-to-r hover:from-[#ff6a3a] hover:to-[#ff527b]  font-bold text-[14px] rounded-lg w-full h-[48px] cursor-pointer"
+            >
+            Dismiss message
+          </button>
+        </div>
+      </div>
+</div>
 
     <!-- Success message end -->
 
 
 
-    <footer class="attribution text-sm text-center mt-12 lg:text-[#fff]">
+    <footer class="attribution text-sm text-center pt-6 lg:text-[#fff]">
       <p>Challenge by</p>
       <a
         class="text-[hsl(228, 45%, 44%)] lg:text-[#FF527B]"

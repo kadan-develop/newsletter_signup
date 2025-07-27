@@ -8,8 +8,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --spacing: 0.25rem;
-    --text-xs: 0.75rem;
-    --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
@@ -190,8 +188,14 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
-  .m-8 {
-    margin: calc(var(--spacing) * 8);
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .bottom-4 {
+    bottom: calc(var(--spacing) * 4);
+  }
+  .float-end {
+    float: inline-end;
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -211,20 +215,11 @@
   .mt-\[24px\] {
     margin-top: 24px;
   }
-  .mr-10 {
-    margin-right: calc(var(--spacing) * 10);
-  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
   .mb-\[24px\] {
     margin-bottom: 24px;
-  }
-  .ml-6 {
-    margin-left: calc(var(--spacing) * 6);
-  }
-  .ml-8 {
-    margin-left: calc(var(--spacing) * 8);
   }
   .block {
     display: block;
@@ -256,23 +251,11 @@
   .w-14 {
     width: calc(var(--spacing) * 14);
   }
-  .w-\[200px\] {
-    width: 200px;
-  }
   .w-\[350px\] {
     width: 350px;
   }
-  .w-auto {
-    width: auto;
-  }
-  .w-fit {
-    width: fit-content;
-  }
   .w-full {
     width: 100%;
-  }
-  .max-w-fit {
-    max-width: fit-content;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -289,8 +272,8 @@
   .flex-col {
     flex-direction: column;
   }
-  .items-baseline {
-    align-items: baseline;
+  .flex-row {
+    flex-direction: row;
   }
   .items-center {
     align-items: center;
@@ -307,14 +290,20 @@
   .justify-between {
     justify-content: space-between;
   }
-  .justify-center {
-    justify-content: center;
+  .justify-end {
+    justify-content: flex-end;
   }
   .justify-evenly {
     justify-content: space-evenly;
   }
-  .self-center {
-    align-self: center;
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-28 {
+    gap: calc(var(--spacing) * 28);
   }
   .self-end {
     align-self: flex-end;
@@ -352,17 +341,20 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
-  .p-8 {
-    padding: calc(var(--spacing) * 8);
-  }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
+  }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
   }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
+  }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
   }
   .pr-3 {
     padding-right: calc(var(--spacing) * 3);
@@ -373,23 +365,15 @@
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
   }
-  .pl-10 {
-    padding-left: calc(var(--spacing) * 10);
-  }
   .text-center {
     text-align: center;
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  .align-bottom {
+    vertical-align: bottom;
   }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-base {
     font-size: var(--text-base);
@@ -557,16 +541,6 @@
       font-size: 56px;
     }
   }
-  .md\:pr-14 {
-    @media (width >= 48rem) {
-      padding-right: calc(var(--spacing) * 14);
-    }
-  }
-  .md\:pl-14 {
-    @media (width >= 48rem) {
-      padding-left: calc(var(--spacing) * 14);
-    }
-  }
   .lg\:mt-\[24px\] {
     @media (width >= 64rem) {
       margin-top: 24px;
@@ -637,11 +611,6 @@
       width: 904px;
     }
   }
-  .lg\:w-full {
-    @media (width >= 64rem) {
-      width: 100%;
-    }
-  }
   .lg\:flex-col {
     @media (width >= 64rem) {
       flex-direction: column;
@@ -657,9 +626,9 @@
       align-items: center;
     }
   }
-  .lg\:items-start {
+  .lg\:justify-around {
     @media (width >= 64rem) {
-      align-items: flex-start;
+      justify-content: space-around;
     }
   }
   .lg\:justify-between {
