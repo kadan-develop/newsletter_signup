@@ -1,7 +1,12 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-.test{
-  border: "1px solid #FF6155" ;
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.test {
+  border: "1px solid #FF6155";
   color: "#ff6155";
   background: "#FFE7E6";
   outline: "none";
@@ -15,4 +20,3 @@
     object-fit: contain;
   }
 }
-

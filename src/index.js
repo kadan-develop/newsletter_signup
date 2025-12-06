@@ -64,3 +64,34 @@ dismissButton.addEventListener("click", () => {
 
   
 });
+
+
+const recipe2 = {
+  name: 'Chicken Curry',
+  ingredients: ['chicken breast', 'coconut milk', 'curry powder', 'onion', 'garlic'],
+  cookingTime: 42,
+  totalIngredients: null,
+  difficultyLevel: '',
+  ratings: [4, 5, 4, 5],
+  averageRating: null,
+};
+
+
+
+const getAverageRating = (arr) => {
+  const ratings = arr.ratings
+
+  let sum = 0
+
+  for(let i=0; i< ratings.length; i++){
+    sum += ratings[i];
+  }
+
+  const avg = sum / ratings.length;
+
+  return Number(avg);
+}
+
+const result = getAverageRating(recipe2);
+
+console.log(result);

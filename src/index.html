@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,18 +22,18 @@
   >
     <!-- Sign-up form start -->
     <main
-      class="hidden flex flex-col sm:rounded-3xl sm:mt-[76px] sm:justify-center bg-[#fff] sm:w-[608px] sm:h-[878px] lg:flex-row-reverse lg:justify-between lg:w-[904px] lg:bg-[#fff] lg:h-[641px] lg:rounded-3xl lg:shadow-lg"
+      class="flex flex-col sm:rounded-3xl sm:mt-[76px] sm:justify-center bg-[#fff] sm:w-[608px] sm:h-[878px] lg:flex-row-reverse lg:justify-between lg:w-[904px] lg:bg-[#fff] lg:h-[641px] lg:rounded-3xl lg:shadow-lg"
     >
       <div
         id="hero-img"
         class="w-full h-[284px] sm:bg-[url(./assets/images/tablet-ilustration.svg)] sm:w-[528px] sm:h-[358.29px] sm:ml-[40px] sm:mt-[42px] lg:bg-[url(./assets/images/desktop-ilustration.svg)] lg:bg-no-repeat lg:w-[400px] lg:h-[596px] lg:mt-[24px] lg:mr-[32px]"
       ></div>
 
-      <section class="p-6 sm:ml-[20px] lg:p-0">
-        <div class="text-content lg:ml-[32px] lg:mt-[95.5px]">
-          <div class="lg:w-[376px]">
+      <section class="p-6 sm:ml-[20px] lg:p-0 lg:ml-[32px]">
+        <div class="text-content">
+          <div class="lg:w-[376px] lg-[450px] lg:mt-[95.5px]">
             <h1
-              class="font-bold text-[40px] mb-[24px] text-[#242742] sm:text-[56px] lg:text-[56px] lg:mb-[32px]"
+              class="font-bold text-[40px] mb-[24px] text-[#242742] md:text-[56px] lg:text-[56px] lg:mb-[32px] text-wrap"
             >
               Stay updated!
             </h1>
@@ -70,102 +69,99 @@
                 src="./assets/images/icon-list.svg"
                 alt="list-icon"
               />
-              <p >And much more!</p>
+              <p>And much more!</p>
             </div>
           </div>
         </div>
 
-        <div
-          class="relative sign-up-content mt-8 sm:mt-[24px] lg:mt-[32px] lg:ml-[32px]"
-        >
-        <form >
-          <label
-            class="text-[12px] font-bold text-[hsl(234, 29%, 20%)]"
-            for="email"
-            >Email address</label
-          >
+        <div class="relative sign-up-content mt-8 sm:mt-[24px] lg:mt-[32px]">
+          <form>
+            <label
+              class="text-[12px] font-bold text-[hsl(234, 29%, 20%)]"
+              for="email"
+              >Email address</label
+            >
 
-          <p
-            id="invalid-email"
-            class="absolute right-0 top-[2px] text-[12px] text-[#FF6155] font-bold hidden"
-          >
-            Valid email required
-          </p>
-          <input
-            class="block border-[1px] border-[#949494] rounded-lg w-full h-[56px] mt-2 p-5 focus:outline focus:outline-[#242742] sm:w-[528px] lg:w-[376px]      "
-            type="text"
-            id="email"
-            name="email"
-            placeholder="email@company.com"
-            required
-          />
-          <button
-           type="submit" class="bg-[#242742] text-[#fff] bg-gradient-to-r hover:from-[#ff6a3a] hover:to-[#ff527b] font-bold text-base rounded-lg w-full h-[56px] mt-6 sm:w-[528px] sm:mt-[16px] lg:w-[376px] cursor-pointer "
-          >
-            Subscribe to monthly newsletter
-          </button>
-        </form>
+            <p
+              id="invalid-email"
+              class="absolute right-0 top-[2px] text-[12px] text-[#FF6155] font-bold hidden"
+            >
+              Valid email required
+            </p>
+            <input
+              class="block border-[1px] border-[#949494] rounded-lg w-full h-[56px] mt-2 p-5 focus:outline focus:outline-[#242742] sm:w-[528px] lg:w-[376px]"
+              type="text"
+              id="email"
+              name="email"
+              placeholder="email@company.com"
+              required
+            />
+            <button
+              type="submit"
+              class="bg-[#242742] text-[16px] text-[#fff] bg-gradient-to-r hover:from-[#ff6a3a] hover:to-[#ff527b] font-bold text-base rounded-lg w-full h-[56px] mt-6 sm:w-[528px] sm:mt-[16px] lg:w-[376px] cursor-pointer"
+            >
+              Subscribe to monthly newsletter
+            </button>
+          </form>
         </div>
       </section>
     </main>
 
     <!-- Sign-up form end -->
 
-  
     <!-- Success message start -->
-  
 
-
-    <div id="success-section" class="success flex flex-col lg:justify-around items-center  min-h-screen">
+    <div
+      id="success-section"
+      class="hidden success flex flex-col md:justify-around items-center min-h-screen"
+    >
       <div
-        class="flex flex-col bg-[#fff] lg:rounded-4xl  mt-[24px] pl-6 pr-10 lg:pl-14 lg:pr-14 sm:mt-[0px] lg:w-[435px] lg:h-[450px]"
-
+        class="flex flex-col bg-[#fff] md:rounded-4xl mt-[24px] pl-6 pr-10 md:pl-14 md:pr-14 sm:mt-[0px] md:w-[435px] md:h-[450px]"
       >
+        <div>
+          <img
+            class="pt-10 w-14"
+            src="./assets/images/icon-success.svg"
+            alt="success-icon"
+          />
+          <h2 class="text-4xl md:text-5xl font-bold text-[#242742] pt-8 mb-2">
+            Thanks for subscribing!
+          </h2>
+          <p class="text-[14px] text-[#242742] pt-4">
+            A confirmation email has been sent to
 
-      <div>
-
-        <img 
-        class="pt-10 w-14"
-          src="./assets/images/icon-success.svg"
-          alt="success-icon"
-        />
-        <h2 class="text-4xl lg:text-5xl font-bold text-[#242742] pt-8 mb-2">
-          Thanks for subscribing!
-        </h2>
-        <p class="text-[14px] text-[#242742] pt-4 ">
-          A confirmation email has been sent to 
-          
-          <span id="email-address" class="font-bold"> </span>
-          Please open it and click the button inside to confirm
-          your subscription. </p>
-      </div>
+            <span id="email-address" class="font-bold"> </span>
+            Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+        </div>
 
         <div>
-            <button
+          <button
             id="dismiss-btn"
-            class="bg-[#242742] mt-8 text-[#fff] bg-gradient-to-r hover:from-[#ff6a3a] hover:to-[#ff527b]  font-bold text-[14px] rounded-lg w-full h-[48px] cursor-pointer"
-            >
+            class="bg-[#242742] mt-8 text-[#fff] bg-gradient-to-r hover:from-[#ff6a3a] hover:to-[#ff527b] font-bold text-[14px] rounded-lg w-full h-[48px] cursor-pointer"
+          >
             Dismiss message
           </button>
         </div>
       </div>
-</div>
+    </div>
 
     <!-- Success message end -->
 
-
-
-    <footer class="attribution text-sm text-center pt-6 lg:text-[#fff]">
+    <footer
+      class="attribution text-sm text-center pt-6 md:text-[#fff] lg:text-[#fff]"
+    >
       <p>Challenge by</p>
       <a
-        class="text-[hsl(228, 45%, 44%)] lg:text-[#FF527B]"
+        class="text-[hsl(228, 45%, 44%)] md:text-[#FF527B] lg:text-[#FF527B]"
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
         >Frontend Mentor</a
       >
       Coded by
       <a
-        class="text-[hsl(228, 45%, 44%)] lg:text-[#FF527B]"
+        class="text-[hsl(228, 45%, 44%)] md:text-[#FF527B] lg:text-[#FF527B]"
         href="frontendmentor.io/kadan-develop"
         >kadan-develop</a
       >.
