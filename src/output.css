@@ -177,9 +177,6 @@
   .relative {
     position: relative;
   }
-  .static {
-    position: static;
-  }
   .top-\[2px\] {
     top: 2px;
   }
@@ -483,9 +480,14 @@
       background-image: url(./assets/images/tablet-ilustration.svg);
     }
   }
-  .md\:mb-\[24px\] {
-    @media (width >= 48rem) {
-      margin-bottom: 24px;
+  .sm\:bg-\[url\(\.\/src\/assets\/images\/tablet-ilustration\.svg\)\] {
+    @media (width >= 40rem) {
+      background-image: url(./src/assets/images/tablet-ilustration.svg);
+    }
+  }
+  .sm\:bg-\[url\(\/assets\/images\/tablet-ilustration\.svg\)\] {
+    @media (width >= 40rem) {
+      background-image: url(/assets/images/tablet-ilustration.svg);
     }
   }
   .md\:h-\[450px\] {
@@ -574,11 +576,6 @@
       display: flex;
     }
   }
-  .lg\:h-\[450px\] {
-    @media (width >= 64rem) {
-      height: 450px;
-    }
-  }
   .lg\:h-\[596px\] {
     @media (width >= 64rem) {
       height: 596px;
@@ -597,11 +594,6 @@
   .lg\:w-\[400px\] {
     @media (width >= 64rem) {
       width: 400px;
-    }
-  }
-  .lg\:w-\[435px\] {
-    @media (width >= 64rem) {
-      width: 435px;
     }
   }
   .lg\:w-\[904px\] {
@@ -624,11 +616,6 @@
       align-items: center;
     }
   }
-  .lg\:justify-around {
-    @media (width >= 64rem) {
-      justify-content: space-around;
-    }
-  }
   .lg\:justify-between {
     @media (width >= 64rem) {
       justify-content: space-between;
@@ -642,11 +629,6 @@
   .lg\:rounded-3xl {
     @media (width >= 64rem) {
       border-radius: var(--radius-3xl);
-    }
-  }
-  .lg\:rounded-4xl {
-    @media (width >= 64rem) {
-      border-radius: var(--radius-4xl);
     }
   }
   .lg\:bg-\[\#242742\] {
@@ -664,6 +646,16 @@
       background-image: url(./assets/images/desktop-ilustration.svg);
     }
   }
+  .lg\:bg-\[url\(\.\/src\/assets\/images\/desktop-ilustration\.svg\)\] {
+    @media (width >= 64rem) {
+      background-image: url(./src/assets/images/desktop-ilustration.svg);
+    }
+  }
+  .lg\:bg-\[url\(\/assets\/images\/desktop-ilustration\.svg\)\] {
+    @media (width >= 64rem) {
+      background-image: url(/assets/images/desktop-ilustration.svg);
+    }
+  }
   .lg\:bg-no-repeat {
     @media (width >= 64rem) {
       background-repeat: no-repeat;
@@ -672,22 +664,6 @@
   .lg\:p-0 {
     @media (width >= 64rem) {
       padding: calc(var(--spacing) * 0);
-    }
-  }
-  .lg\:pr-14 {
-    @media (width >= 64rem) {
-      padding-right: calc(var(--spacing) * 14);
-    }
-  }
-  .lg\:pl-14 {
-    @media (width >= 64rem) {
-      padding-left: calc(var(--spacing) * 14);
-    }
-  }
-  .lg\:text-5xl {
-    @media (width >= 64rem) {
-      font-size: var(--text-5xl);
-      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
   .lg\:text-\[56px\] {
